@@ -1,0 +1,9 @@
+<div *ngIf="pokemon!=undefined">
+  <div>{{pokemon.name}}</div>
+  <ul *ngFor="let ability of pokemon.abilityNames">
+    <li>{{ability}}</li>
+  </ul>
+</div>
+<div *ngIf="pokemon==undefined">
+  No Pokemon Data found!
+</div>
